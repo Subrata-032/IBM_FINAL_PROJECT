@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    background-color: rgb(15, 16, 20);
+    display: flex;
+}
+.main-box{
+    height:100vh;
+    
+    /* background-image: url("back.jpg");
+    background-size: cover; */
+}
+.side_menubar{
+    position: fixed;
+    height: 100vh;
+    width: 200px;
+}
+.logo{
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.side_menubar .logo a{
+    color: white;
+    font-size: 20px;
+    margin-left: 5px;
+    text-decoration: none;
+}
+.side_menubar .menu{
+    position: absolute;
+    width: 90%;
+    top:100px;
+    margin-left: 20px;
+}
+.side_menubar .menu li{
+    padding: 20px ;
+    list-style-type: none;
+    padding-left: 10px;
+    /* display: inline-block; */
+    /* border-radius: 30px; */
+    
+}
+.side_menubar .menu li i{
+    font-size: 15px;
+    color: whitesmoke;
+    opacity:0.5;
+    /* box-shadow: rgba(100, 100, 111, 0.50) 0px 7px 29px 0px; */
+    /* padding-right: 8px;  */
+}
+/* .side_menubar .menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+} */
+ul{
+    padding: 0;
+}
+.side_menubar .menu li i:hover{
+    cursor: pointer;
+    color: white;
+    opacity: 5;
+    transform:scale(1.2);
+    transition: all 0.3s linear; 
+    box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 50px 0px;
+}
+/* .side_menubar .menu li a:hover{
+    transform: scale(1.2); 
+} */
+/*menu2*/
+
+.side_menubar #menu2{
+    position: absolute;
+    width: 60%;
+    top:99px;
+    margin-left: 45px;
+    opacity: 0;
+}
+.side_menubar #menu2 li{
+    list-style-type:none;
+    padding: 20px;
+}
+.side_menubar #menu2 li a{
+    text-decoration: none;
+    color: grey;
+    /* transition-duration: 1s; */
+}
+.side_menubar #menu2 li:hover{
+    transform: scale(1.1);
+    transition: all 0.3s linear; 
+
+}
+.side_menubar #menu2 li a:hover{
+    color: white;
+}
+.menu+#menu2{
+    /* display:inline-block; */
+} 
+.menu:hover+#menu2{
+    /* transform: scale(1.2);  */
+    transition-duration: 1s ;
+    transition-delay: 0.5s;
+    opacity: 1;
+}
+#menu2:hover{
+    opacity: 1;
+    transition: all 0.5s ease-in-out; 
+    /* transition-duration: s ; */
+}
+/* .main_box2{
+    height: 100vh;
+    width: 1320px;
+    border: 2px solid white;
+    margin-left: 200px;
+} */
