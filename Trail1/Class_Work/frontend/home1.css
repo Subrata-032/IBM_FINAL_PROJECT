@@ -1,0 +1,272 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Outer Container */
+#outer {
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGYtbWlzYzYtdGVkMzEwNS10ZWRkeS5qcGc.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Button */
+#btn2 {
+    height: 40px;
+    width: 100px;
+    background-color: #8E1616;
+    border: 2px solid white;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Logo */
+.logo_back {
+    height: 80px;
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Synonyme Section */
+#Synonyme {
+    height: auto;
+    width: 90%;
+    max-width: 750px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+#syno1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* Movie Section */
+#outer_3rd {
+    height: auto;
+    width: 100%;
+    background-color: black;
+    padding: 20px 0;
+}
+
+#movie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.product-box {
+    height: 260px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(12, 10, 10);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer th {
+    color: white;
+    padding: 10px;
+}
+
+.footer th a {
+    color: white;
+    font-size: 17px;
+}
+
+/* Question Section */
+.Question {
+    height: auto;
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+.Question p {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#qs1 {
+    height: 60px;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 5px 0px;
+    padding: 10px;
+    color: white;
+}
+
+#qs1:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Hover Div */
+#hover_div {
+    height: 60px;
+    width: 90%;
+    margin: -20px auto;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 5px 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#qs1:hover + #hover_div {
+    opacity: 1;
+}
+
+/* Registration Form */
+.register {
+    width: 90%;
+    max-width: 350px;
+    margin: 100px auto;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(236, 234, 234, 0.5);
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+#btn1 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #FFB200;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Follow Section */
+#follow {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#follow a {
+    padding: 0 15px;
+    color: white;
+    font-size: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    #btn2 {
+        width: 80px;
+        font-size: 16px;
+        top: 10px;
+        right: 10px;
+    }
+
+    #Synonyme {
+        margin-top: 100px;
+    }
+
+    .register {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #btn2 {
+        width: 70px;
+        font-size: 14px;
+        top: 5px;
+        right: 5px;
+    }
+
+    #syno1 {
+        font-size: 2rem;
+    }
+
+    #movie {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #btn2 {
+        width: 60px;
+        font-size: 12px;
+    }
+
+    #syno1 {
+        font-size: 1.5rem;
+    }
+
+    #movie {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    input, #btn1 {
+        font-size: 14px;
+    }
+}
